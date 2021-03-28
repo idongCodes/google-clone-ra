@@ -180,9 +180,33 @@ a:hover {
 
 /* bottom section styles  */
 .btm-sec {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(104, 104, 104, 0.1);
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-size: 0.9rem;
+}
+.btm-sec p {
+    text-align: left;
+    margin-left: -150px;
+}
+.btm-sec .ul-btm-left {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btm-sec .ul-btm-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+.btm-sec .ul-btm-left li a, p a, .ul-btm-right li a {
+    color: grey;
 }
