@@ -210,3 +210,10 @@ a:hover {
 .btm-sec .ul-btm-left li a, p a, .ul-btm-right li a {
     color: grey;
 }
+
+/* mobile media query  */
+@media all and (max-width: 900px) {
+    .btm-sec {
+        display: none;
+    }
+}
