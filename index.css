@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-family: sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -45,4 +46,68 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* top section styles  */
+.top-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 0;
+}
+.top-sec .top-bar-left {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-sec .top-bar-right {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.top-sec .top-bar-right .menu-icon {
+    cursor: pointer;
+}
+.top-sec .top-bar-right .top-bar-right-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    margin: 0 20px 0 0;
+}
+.top-sec a {
+    color: black;
+}
+.top-sec .top-bar-right .profile-img {
+    width: 45px;
+    height: 45px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: red blue green yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.top-sec .top-bar-right .profile-img .inner-border {
+    background: url("images/profile-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
 }
