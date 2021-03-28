@@ -2,7 +2,18 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google font  -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+
+        <!-- fontawesome cdn  -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+        <!-- title  -->
         <title>Google - Clone</title>
+
+        <!-- css styles  -->
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -28,11 +39,12 @@
 
         <!-- mid section  -->
         <section class="section mid-sec">
-            <h1>Google</h1>
+            <h1><span class="blue">G</span><span class="red">o</span><span class="orange">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span></h1>
             <div class="search-div">
-                <!-- search icon -->
+                <i class="fas fa-search" style="color: rgba(0,0,0,0.3);"></i>
                 <input type="search" name="" id="">
-                <!-- mic icon -->
+                <i class="fas fa-microphone" data-toggle="tooltip" title="Search by voice" style="color: rgb(59, 121, 179);"></i>
+
             </div>
             <div class="mid-sec-btns">
                 <button class="search-btn">Google Search</button>
@@ -54,5 +66,12 @@
                 <li><a href="">Settings</a></li>
             </ul>
         </section>
+
+        <!-- scripts  -->
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
     </body>
 </html>

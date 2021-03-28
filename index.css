@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -63,6 +63,10 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .top-sec .top-bar-left {
     width: 100px;
@@ -94,7 +98,7 @@ a:hover {
     height: 45px;
     border-style: solid;
     border-width: 3px;
-    border-color: red blue green yellow;
+    border-color: red blue green orange;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -110,4 +114,75 @@ a:hover {
     height: 40px;
     border: 2px solid white;
     border-radius: 50%;
+}
+
+/* mid section styles  */
+.mid-sec {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mid-sec h1 {
+    font-size: 6rem;
+    font-family: 'Reem Kufi', sans-serif;
+}
+.mid-sec h1 .blue {
+    color: rgb(59, 121, 179);
+}
+.mid-sec h1 .red {
+    color: red;
+}
+.mid-sec h1 .orange {
+    color: orange;
+}
+.mid-sec h1 .green {
+    color: green;
+}
+.mid-sec * {
+    margin: 10px 0;
+}
+.mid-sec .search-div {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+.mid-sec .search-div:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.mid-sec .search-div input {
+    border: none;
+    width: 90%;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+.mid-sec .search-div input:focus {
+    outline: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mid-sec .mid-sec-btns .search-btn {
+    padding: 13px;
+    font-size: .9rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0 8px;
+}
+.mid-sec .mid-sec-btns .search-btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* bottom section styles  */
+.btm-sec {
+    background: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
